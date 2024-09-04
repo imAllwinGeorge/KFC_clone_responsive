@@ -1,0 +1,99 @@
+/* .nav{
+    display: flex;
+} */
+ 
+.bucketsmb{
+    width: 50px;
+ }
+ .zoom-container {
+    width: 100%; /* Responsive width */
+    height: 400px; /* Fixed height, adjust as needed */
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    transition: background-size 0.5s ease; /* Smooth transition on resize */
+}
+.zoom-image {
+    width: 120%; /* Scale the image beyond its container */
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Optional: Additional scaling based on container size */
+.zoom-container {
+    transform: scale(1.1); /* Slight zoom based on container size */
+}
+.fixed-size-img {
+    object-fit: cover;
+    height: 100vh; /* or any fixed height you want */
+    width: auto;
+    max-width: none; /* Ensures the image width doesn’t shrink */
+}
+
+.carousel-inner {
+    overflow: hidden; /* Hides the overflow if the image goes outside the container */
+}
+.disbuttons{
+    background-color: #E3E3E3;
+}
+.strips{
+    margin-top: 72px;
+}
+
+
+
+/* ca */
+.container-fluid {
+   padding-left: 12.5rem;
+}
+@media (max-width: 992px) {
+    .container-fluid {
+        padding-left: 6.25rem; /* Reduce padding to 50% */
+    }
+}
+
+/* Remove padding entirely on smaller screens */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding-left: 0; /* Remove padding completely */
+    }
+}
+
+
+/* footer */
+
+.shfooter .collapse {
+    display: inherit;
+  }
+  @media (max-width:767px) {
+    .shfooter ul {
+      margin-bottom: 0;
+    }
+  
+    .shfooter .collapse {
+      display: none;
+    }
+  
+    .shfooter .collapse.show {
+      display: block;
+    }
+  
+    .shfooter .title .fa-angle-up,
+    .shfooter .title[aria-expanded=true] .fa-angle-down {
+      display: none;
+    }
+  
+    .shfooter .title[aria-expanded=true] .fa-angle-up {
+      display: block;
+    }
+  
+    .shfooter .navbar-toggler {
+      display: inline-block;
+      padding: 0;
+    }
+  }
+
+  .footerlinks{
+    text-decoration: none;
+  }
